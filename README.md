@@ -3,13 +3,13 @@
 This is an example of source code using python programming language to control MKS instrument multi gas controller type 647C 
 In the manual provided by MKS instrument, chapter 4 instructs as well as list the necessary command syntax.
 
-FS c xxxx      enter setpoint of a channel
+FS c xxxx       enter setpoint of a channel
  c = 1..4         channel 
  x = 0..1100      setpoint in 0.1 percent of full scale 
 
 RA c rr 	enter range
  c = 1..4	  channel
- r = 0..39   range code:
+ r = 0..39   	  range code:
 
  		0 = 1.000 SCCM, 20 = 1.000 SCFH
 		1 = 2.000 SCCM, 21 = 2.000 SCFH
@@ -34,9 +34,9 @@ RA c rr 	enter range
 
 
 ON c		open valve
- c = 0	 main valve (corresponds to: ON ALL)
+ c = 0	 	 main valve (corresponds to: ON ALL)
  c = 1..4	 channel valve
 
 OF c		close valve 
- c = 0	 main valve (corresponds to: OFF ALL)
- c = 1..4   channel valve 
+ c = 0	 	 main valve (corresponds to: OFF ALL)
+ c = 1..4   	 channel valve 
